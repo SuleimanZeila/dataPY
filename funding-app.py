@@ -7,7 +7,7 @@ st.set_page_config(page_title='Global - Crisis Figures Data', page_icon='star', 
 st.title("Global - Crisis Figures Data")
 
 df = pd.read_csv("Data_ ReliefWeb Crisis Figures Data - latest_figures.csv")
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 countries_list = df["crisis_name"].unique()
 org_list = df["figure_source"].unique()
